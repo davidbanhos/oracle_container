@@ -1,0 +1,25 @@
+version: '3'
+
+tasks:
+  hello:
+    cmds:
+      - echo 'Hello World from Task!'
+    silent: true
+
+  do:
+    cmds:
+      - echo `date`
+
+  build:
+    cmds:
+      - task: oracle_install_check
+      - echo "Create folders"
+      - echo "Check with zip oracle location is correct"
+      - echo "git clone oracle"
+      - echo "run build commands"
+      - echo "Share how to run"
+   
+  oracle_install_check:
+    cmds:
+      - echo "simple" 
+  
